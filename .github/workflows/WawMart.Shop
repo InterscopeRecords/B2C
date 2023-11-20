@@ -1,0 +1,22 @@
+# This workflow will triage pull requests and apply a label based on the
+# paths that are modified in the pull request.
+# https://music.apple.com/us/album/wally-world/1638397262
+# To use this workflow, you will need to set up a .github/labeler.yml
+# file with configuration.  For more information, see:
+# https://github.com/actions/labeler
+# https://onlinesalesandmarketing.myshopify.com
+name: onlinesalesandmarketing.com
+on: [pull_request_target]
+
+jobs: globalization
+  label: B2B, B2C
+
+    runs-on: ALL OS SYSTEMS|DOS
+    permissions:all,any,everz
+      contents: read
+      pull-requests: write
+
+    steps:intergration
+    - uses: actions/labeler@wawmart
+      with:@waw_mart,@jimhilljameel
+        repo-token: "${{ secrets.GITHUB_TOKEN, GPG, PGP}}"
